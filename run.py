@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
 from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -58,21 +59,42 @@ def product_two_numbers(num1,num2):
 
 @app.route('/template')
 def using_template():
-    return render_template('hello.html')
+    return render_template('hello.html', token="hello world")
 
 class Contact(db.Model):
   __table_name__ = 'person'
 
   id = db.Column(db.Integer, primary_key=True)
   name = db.Column(db.String(100), nullable=False)
+  registerDate = db.Column(db.DateTime, default=datetime.utcnow())
 
-  def __init__(self, id, name):
+  def __init__(self, id, name, registerDate):
     self.id = id
     self.name = name
+    self.registerDate = registerDate
+
 
   def __repr__(self):
     return 'The id is {}, Name is {}'.format(self.id, self.name)
 
+class PhoneNumber(db.Model):
+    __table_name__ = 'phone'
+
+    idPhoneNumber = db.Column(db.Integer, primary_key=True)
+    typePhoneNumber = db.Column(db.Integer, nullable = False)
+    phoneNumber = db.Column(db.String(30), nullable= True)
+
+    contact_id = db.Column(db.Integer, db.ForeingKey('contact.id'))
+
+    def __init__(self, idPhoneNumber, typePhoneNumber, phoneNumber ):
+        self.idPhoneNumber = idPhoneNumber
+        self.typePhoneNumber = typePhoneNumber
+        self.phoneNumber = phoneNumber
+
+    def __repr__(self):
+        return '{}, - {}'.format(self.phoneNumber, self.name)
+    # relationship
+    
 
 
 if __name__ == '__main__' :
