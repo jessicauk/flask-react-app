@@ -61,7 +61,7 @@ def product_two_numbers(num1,num2):
 def using_template():
     return render_template('hello.html', token="hello world")
 
-class Contact(db.Model):
+class Person(db.Model):
   __table_name__ = 'person'
 
   id = db.Column(db.Integer, primary_key=True)
@@ -84,12 +84,13 @@ class PhoneNumber(db.Model):
     typePhoneNumber = db.Column(db.Integer, nullable = False)
     phoneNumber = db.Column(db.String(30), nullable= True)
 
-    contact_id = db.Column(db.Integer, db.ForeingKey('contact.id'))
+    person_id = db.Column(db.Integer, db.ForeignKey('person.id'))
 
-    def __init__(self, idPhoneNumber, typePhoneNumber, phoneNumber ):
+    def __init__(self, idPhoneNumber, typePhoneNumber, phoneNumber, person_id):
         self.idPhoneNumber = idPhoneNumber
         self.typePhoneNumber = typePhoneNumber
         self.phoneNumber = phoneNumber
+        self.person_id = person_id
 
     def __repr__(self):
         return '{}, - {}'.format(self.phoneNumber, self.name)
