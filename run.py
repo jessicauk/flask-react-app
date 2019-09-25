@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path="react-app/build")
 
 app.config.update(
   SECREY_KEY='jessica22',
@@ -13,7 +13,7 @@ app.config.update(
 
 db = SQLAlchemy(app)
 
-@app.route('/')
+@app.route('/hello')
 def hello():
     return 'Hello'
 
@@ -57,9 +57,10 @@ def product_two_numbers(num1,num2):
 
 # templates
 
-@app.route('/template')
+@app.route('/')
 def using_template():
-    return render_template('hello.html', token="hello world")
+    # return render_template('index.html', token="hello world")
+    return app.send_static_file('index.html')
 
 class Person(db.Model):
   __table_name__ = 'person'
