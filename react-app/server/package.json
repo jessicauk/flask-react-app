@@ -1,0 +1,19 @@
+{
+  "name": "express-server",
+  "version": "1.0.0",
+  "description": "react app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicauk/react-router-app.git"
+  },
+  "author": "Jessica Apolinar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicauk/react-router-app/issues"
+  },
+  "homepage": "https://github.com/jessicauk/react-router-app#readme"
+}

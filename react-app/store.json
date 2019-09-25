@@ -1,0 +1,94 @@
+{
+  "writters": [
+    {
+      "id": "jane-austen",
+      "name": "Jane Austen",
+      "born":"1775",
+      "deceased": "1817",
+      "description": "The Jane Austen Centre’s website states: ‘Jane Austen is perhaps the best known and best loved of Bath’s many famous residents and visitors.’ One wonders at the restraint in that, considering that Jane Austen is indisputably one of the greatest English writers – some say the greatest after Shakespeare – and certainly the greatest English novelist and one of the most famous English women who ever lived…",
+      "image": "https://www.nosweatshakespeare.com/wp-content/uploads/2015/04/jane-austin-portrait-80x80.jpg"
+    },
+    {
+      "id": "william-blake",
+      "name": "William Blake",
+      "born":"1757",
+      "deceased": "1827",
+      "description": "Although not highly regarded either as a painter or poet by his contemporaries William Blake has the distinction of finding his place in the top ten of both English writers and English painters. The reason he was disregarded is because he was very much ahead of his time in his views and his poetic style, and also because he was regarded as being somewhat mad, due to behaviour that would be thought of as only slightly eccentric today– for example his naturistic habit of walking about his garden naked and sunbathing there…",
+      "image": "https://www.nosweatshakespeare.com/wp-content/uploads/2015/04/william-blake-portrait-80x80.jpg"
+    },
+    {
+      "id": "charles-dickens",
+      "name": "Charles Dickens",
+      "born":" 1812",
+      "deceased": "1870",
+      "description": "Charles Dickens was an extraordinary man. He is best known as a novelist but he was very much more than that. He was as prominent in his other pursuits but they were not areas of life where we can still see him today.  We see him as the author of such classics as Oliver Twist, David Copperfield, Great Expectations, A Tale of Two Cities, Bleak House and many others. All of his novels are English classics…",
+      "image": "https://www.nosweatshakespeare.com/wp-content/uploads/2015/04/charles-dickens-photograph-80x80.jpg"
+    },
+    {
+      "id": "harold-pinter",
+      "name": "Harold Pinter",
+      "born":"1930",
+      "deceased": "2008",
+      "description": "Harold Pinter won the Nobel Prize for Literature in 2005, three years before his death from cancer. He had a career of more than half a century as a playwright, director, actor and writer of screenplays for television and film. He was without doubt the most influential English playwright of the twentieth century and so earns his place on this list… ",
+      "image": "https://www.nosweatshakespeare.com/wp-content/uploads/2015/04/Harold-Pinter-photo-80x80.jpg"
+    }
+  ],
+  "texts": [
+    {
+      "id": "pride-and-prejudice",
+      "writerId":"jane-austen",
+      "title": "Pride and Prejudice",
+      "description": "Orgullo y prejuicio, publicada por primera vez el 28 de enero de 1813 como una obra anónima, es la más famosa de las novelas de Jane Austen y una de las primeras comedias románticas en la historia de la novela.",
+      "published": 1813
+    },
+    {
+      "id": "persuasion",
+      "writerId":"jane-austen",
+      "title": "Persuasion",
+      "description": "Persuasión es la última novela escrita por Jane Austen. La empezó a escribir poco tiempo después de haber terminado Emma, la terminó de escribir en agosto de 1816. Austen murió a la edad de 41 años en 1817, no obstante Persuasión fue publicada como trabajo póstumo en 1818.",
+      "published": 1817
+    },
+    {
+      "id": "london",
+      "writerId":"william-blake",
+      "title": "London",
+      "description": "London es un poema de William Blake, publicado en Songs of Experience en 1794. Es uno de los pocos poemas en Songs of Experience que no tiene un poema correspondiente en Songs of Innocence. Blake vivió en la ciudad capital de Londres, que fue la ubicación de este poema.",
+      "published": 1794
+    },
+    {
+      "id": "the-lamb",
+      "writerId":"william-blake",
+      "title": "The Lamb",
+      "description": "El Cordero es un poema de William Blake, publicado en Songs of Innocence en 1776. The Lamb es el poema de contraparte del poema de Blake: The Tyger en Songs of Experience. Blake escribió Songs of Innocence como contrario a Songs of Experience, un principio central en su filosofía y un tema central en su trabajo.",
+      "published": 1789
+    },
+    {
+      "id": "a-christmas-carol",
+      "writerId":"charles-dickens",
+      "title": "A Christmas Carol",
+      "description": "-",
+      "published": 1843
+    },
+    {
+      "id": "oliver-twist",
+      "writerId":"charles-dickens",
+      "title": "Oliver Twist",
+      "description": "Oliver Twist; or The Parish Boy's Progress es la segunda novela del autor inglés Charles Dickens. Se publicó originalmente como novela por entregas de aparición mensual en la revista Bentley's Miscellany, dirigida por el propio Dickens, entre febrero de 1837 y abril de 1839.",
+      "published": 1839
+    },
+    {
+      "id": "the-birthday-party",
+      "writerId":"harold-pinter",
+      "title": "The Birthday Party",
+      "description": "La fiesta de cumpleaños es la primera obra de teatro de Harold Pinter. Es una de sus obras más conocidas y más frecuentemente interpretadas. En el escenario de una casa de huéspedes junto al mar, una pequeña fiesta de cumpleaños se convierte en una pesadilla ante la inesperada llegada de dos extraños siniestros.",
+      "published": 1958
+    },
+    {
+      "id": "old-times",
+      "writerId":"harold-pinter",
+      "title": "Old Times",
+      "description": "Viejos tiempos es una obra de teatro en dos actos del dramaturgo británico Harold Pinter, estrenada en 1971.",
+      "published": 1971
+    }
+  ]
+}
