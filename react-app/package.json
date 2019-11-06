@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "babel-preset-es2015-node6": "^0.4.0",
-    "mongoose": "^5.4.9",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
